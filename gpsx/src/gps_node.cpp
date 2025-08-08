@@ -679,6 +679,8 @@ void GPSPublisher::timer_callback()
   readMessage();
 
 
+  newdata_=true; // :)
+
   if(newdata_)
   {
     message.longitude=gga_.longitude;
